@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
+    
+    
+// background
+$violet: hsl(273, 75%, 66%)
+$blue: hsl(240, 73%, 65%)
+
+// text
+$gray_blue: hsl(237, 12%, 33%)
+$gray_blue2: hsl(240, 6%, 50%)
+$orange: #F47B56
+
+// divider
+$light_gray_blue: hsl(240, 5%, 91%)
+
+$kumbh: 'Kumbh Sans', sans-serif
+
+$medium: 800px
+    
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: $kumbh
+
+body
+    display: grid
+    place-items: center
+    height: 120vh
+    background: linear-gradient($violet, $blue)
+
+.holder
+    width: 90%
+    @media screen and ( min-width: $medium )
+        width: 900px
+        position: relative
+
+#box
+    position: absolute
+    top: 10.7rem
+    left: -5.47rem
+    width: 20%
+    z-index: 1
+
+.faq_section
+    display: flex
+    flex-direction: column
+    background-color: white
+    border-radius: 20px
+    position: relative
+    @media screen and ( min-width: $medium )
+        flex-direction: row
+        margin-top: 0
+        overflow: hidden
+        
+.images
+    position: relative
+    @media screen and ( min-width: $medium )
+        width: 50%
+        height: inherit
+    #bg_pattern
+        position: absolute
+        left: 3rem
+        width: 72%
+        @media screen and ( min-width: $medium )
+            top: -14.1rem
+            left: -27.5rem
+            width: 180%
+    #img_woman
+        position: absolute
+        top: -7rem
+        left: 3rem
+        width: 72%
+        @media screen and ( min-width: $medium )
+            top: 3rem
+            left: -5.1rem
+            width: 100%
+
+.faq
+    padding: 9rem 1.5rem 3.5rem 1.5rem
+    h1
+        text-align: center
+        font-size: 2rem
+        margin-bottom: 1rem
+    @media screen and ( min-width: $medium )
+        width: 50%
+        padding: 4rem 6.5rem 5rem 1rem
+        h1
+            text-align: left
+details
+    padding: 1rem 0
+    font-size: .85rem
+    color: $gray_blue
+    cursor: pointer
+    summary
+        background: url('/images/icon-arrow-down.svg') no-repeat right center
+        list-style: none
+        &:hover
+            color: $orange
+
+details[open]
+    summary
+        background: url('/images/icon-arrow-up.svg') no-repeat right center
+        list-style: none
+        font-weight: bold
+        color: darken($gray_blue, 20%)
+    p
+        padding-top: 1rem
+        color: $gray_blue2
+        font-size: .8rem
+        width: 95%
+
+hr
+    height: 2px
+    background-color: $light_gray_blue
+    border: none
+
+.attribution 
+    margin-top: 1rem
+    font-size: 11px
+    text-align: center
+    a 
+        color: $orange
+      

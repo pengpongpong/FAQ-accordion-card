@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 120vh;
+  background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+}
+
+.holder {
+  width: 90%;
+}
+@media screen and (min-width: 800px) {
+  .holder {
+    width: 900px;
+    position: relative;
+  }
+}
+
+#box {
+  position: absolute;
+  top: 10.7rem;
+  left: -5.47rem;
+  width: 20%;
+  z-index: 1;
+}
+
+.faq_section {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+@media screen and (min-width: 800px) {
+  .faq_section {
+    flex-direction: row;
+    margin-top: 0;
+    overflow: hidden;
+  }
+}
+
+.images {
+  position: relative;
+}
+@media screen and (min-width: 800px) {
+  .images {
+    width: 50%;
+    height: inherit;
+  }
+}
+.images #bg_pattern {
+  position: absolute;
+  left: 3rem;
+  width: 72%;
+}
+@media screen and (min-width: 800px) {
+  .images #bg_pattern {
+    top: -14.1rem;
+    left: -27.5rem;
+    width: 180%;
+  }
+}
+.images #img_woman {
+  position: absolute;
+  top: -7rem;
+  left: 3rem;
+  width: 72%;
+}
+@media screen and (min-width: 800px) {
+  .images #img_woman {
+    top: 3rem;
+    left: -5.1rem;
+    width: 100%;
+  }
+}
+
+.faq {
+  padding: 9rem 1.5rem 3.5rem 1.5rem;
+}
+.faq h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 800px) {
+  .faq {
+    width: 50%;
+    padding: 4rem 6.5rem 5rem 1rem;
+  }
+  .faq h1 {
+    text-align: left;
+  }
+}
+
+details {
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  color: hsl(237deg, 12%, 33%);
+  cursor: pointer;
+}
+details summary {
+  background: url("/images/icon-arrow-down.svg") no-repeat right center;
+  list-style: none;
+}
+details summary:hover {
+  color: #F47B56;
+}
+
+details[open] summary {
+  background: url("/images/icon-arrow-up.svg") no-repeat right center;
+  list-style: none;
+  font-weight: bold;
+  color: #1d1e25;
+}
+details[open] p {
+  padding-top: 1rem;
+  color: hsl(240deg, 6%, 50%);
+  font-size: 0.8rem;
+  width: 95%;
+}
+
+hr {
+  height: 2px;
+  background-color: hsl(240deg, 5%, 91%);
+  border: none;
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #F47B56;
+}/*# sourceMappingURL=index.css.map */
